@@ -1,0 +1,174 @@
+/run
+├── alsa
+├── avahi-daemon
+├── blkid
+├── console-setup
+├── credentials
+│   └── systemd-sysusers.service
+├── cups
+│   └── certs
+├── dbus
+├── fsck
+├── gdm3
+├── initramfs
+├── lock
+│   ├── subsys
+│   └── whoopsie
+├── log
+│   └── journal
+├── mount
+├── netns
+├── NetworkManager
+│   ├── conf.d
+│   ├── devices
+│   └── system-connections
+├── openvpn
+├── openvpn-client
+├── openvpn-server
+├── plymouth
+├── sendsigs.omit.d
+├── shm -> /dev/shm
+├── snapd
+│   ├── lock
+│   └── ns
+├── speech-dispatcher
+│   └── log -> /var/log/speech-dispatcher
+├── spice-vdagentd
+├── sudo
+│   └── ts
+├── systemd
+│   ├── ask-password
+│   ├── dynamic-uid
+│   ├── generator
+│   │   ├── local-fs.target.requires
+│   │   ├── local-fs.target.wants
+│   │   ├── openvpn.service.wants
+│   │   └── swap.target.requires
+│   ├── generator.late
+│   │   ├── graphical.target.wants
+│   │   └── multi-user.target.wants
+│   ├── inaccessible
+│   │   └── dir
+│   ├── incoming
+│   ├── inhibit
+│   ├── journal
+│   │   └── streams
+│   ├── machines
+│   ├── netif
+│   │   ├── leases
+│   │   ├── links
+│   │   └── lldp
+│   ├── propagate
+│   │   ├── accounts-daemon.service
+│   │   ├── colord.service
+│   │   ├── e2scrub_reap.service
+│   │   ├── fprintd.service
+│   │   ├── fwupd-refresh.service
+│   │   ├── geoclue.service
+│   │   ├── irqbalance.service
+│   │   ├── logrotate.service
+│   │   ├── ModemManager.service
+│   │   ├── NetworkManager.service
+│   │   ├── power-profiles-daemon.service
+│   │   ├── switcheroo-control.service
+│   │   ├── systemd-hostnamed.service
+│   │   ├── systemd-localed.service
+│   │   ├── systemd-logind.service
+│   │   ├── systemd-oomd.service
+│   │   ├── systemd-resolved.service
+│   │   ├── systemd-timedated.service
+│   │   ├── systemd-udevd.service
+│   │   └── upower.service
+│   ├── resolve
+│   │   └── netif
+│   ├── seats
+│   ├── sessions
+│   ├── shutdown
+│   ├── system
+│   │   └── systemd-networkd.service.wants
+│   ├── transient
+│   ├── unit-root
+│   ├── units
+│   ├── userdb
+│   └── users
+├── tmpfiles.d
+├── udev
+│   ├── data
+│   ├── links
+│   │   ├── cdrom
+│   │   ├── disk\x2fby-id\x2fata-VBOX_CD-ROM_VB2-01700376
+│   │   ├── disk\x2fby-id\x2fata-VBOX_HARDDISK_VBad5f6dad-b65520a1
+│   │   ├── disk\x2fby-id\x2fata-VBOX_HARDDISK_VBad5f6dad-b65520a1-part1
+│   │   ├── disk\x2fby-id\x2fata-VBOX_HARDDISK_VBad5f6dad-b65520a1-part2
+│   │   ├── disk\x2fby-id\x2fata-VBOX_HARDDISK_VBad5f6dad-b65520a1-part3
+│   │   ├── disk\x2fby-label\x2fVBox_GAs_6.1.34
+│   │   ├── disk\x2fby-partlabel\x2fEFI\x5cx20System\x5cx20Partition
+│   │   ├── disk\x2fby-partuuid\x2f0e4720f2-c3cb-4595-a178-f16017c7215f
+│   │   ├── disk\x2fby-partuuid\x2f432f60cb-f57e-4b9a-b9fb-d0118298d99c
+│   │   ├── disk\x2fby-partuuid\x2fe2d2c49c-2707-40dc-bdcb-8f6c0b06fd2e
+│   │   ├── disk\x2fby-path\x2fpci-0000:00:01.1-ata-2
+│   │   ├── disk\x2fby-path\x2fpci-0000:00:01.1-ata-2.0
+│   │   ├── disk\x2fby-path\x2fpci-0000:00:0d.0-ata-1
+│   │   ├── disk\x2fby-path\x2fpci-0000:00:0d.0-ata-1.0
+│   │   ├── disk\x2fby-path\x2fpci-0000:00:0d.0-ata-1.0-part1
+│   │   ├── disk\x2fby-path\x2fpci-0000:00:0d.0-ata-1.0-part2
+│   │   ├── disk\x2fby-path\x2fpci-0000:00:0d.0-ata-1.0-part3
+│   │   ├── disk\x2fby-path\x2fpci-0000:00:0d.0-ata-1-part1
+│   │   ├── disk\x2fby-path\x2fpci-0000:00:0d.0-ata-1-part2
+│   │   ├── disk\x2fby-path\x2fpci-0000:00:0d.0-ata-1-part3
+│   │   ├── disk\x2fby-uuid\x2f2022-03-23-00-35-42-41
+│   │   ├── disk\x2fby-uuid\x2f5CAD-CD17
+│   │   ├── disk\x2fby-uuid\x2fea5b5327-0811-417d-9fb9-59ed865a2214
+│   │   ├── dri\x2fby-path\x2fpci-0000:00:02.0-card
+│   │   ├── dri\x2fby-path\x2fpci-0000:00:02.0-render
+│   │   ├── input\x2fby-id\x2fusb-VirtualBox_USB_Tablet-event-mouse
+│   │   ├── input\x2fby-id\x2fusb-VirtualBox_USB_Tablet-mouse
+│   │   ├── input\x2fby-path\x2fpci-0000:00:04.0-event-mouse
+│   │   ├── input\x2fby-path\x2fpci-0000:00:04.0-mouse
+│   │   ├── input\x2fby-path\x2fpci-0000:00:06.0-usb-0:1:1.0-event-mouse
+│   │   ├── input\x2fby-path\x2fpci-0000:00:06.0-usb-0:1:1.0-mouse
+│   │   ├── input\x2fby-path\x2fplatform-i8042-serio-0-event-kbd
+│   │   ├── input\x2fby-path\x2fplatform-i8042-serio-1-event-mouse
+│   │   ├── input\x2fby-path\x2fplatform-i8042-serio-1-mouse
+│   │   ├── rtc
+│   │   └── snd\x2fby-path\x2fpci-0000:00:05.0
+│   ├── static_node-tags
+│   │   └── uaccess
+│   ├── tags
+│   │   ├── master-of-seat
+│   │   ├── power-switch
+│   │   ├── seat
+│   │   ├── snap_firefox_firefox
+│   │   ├── snap_firefox_geckodriver
+│   │   ├── snap_snapd-desktop-integration_snapd-desktop-integration
+│   │   ├── snap_snap-store_snap-store
+│   │   ├── snap_snap-store_ubuntu-software
+│   │   ├── snap_snap-store_ubuntu-software-local-file
+│   │   ├── systemd
+│   │   └── uaccess
+│   └── watch
+├── udisks2
+├── user
+│   └── 1000
+│       ├── at-spi
+│       ├── dbus-1
+│       │   └── services
+│       ├── dconf
+│       ├── gnome-shell
+│       │   └── runtime-state-LE.
+│       ├── gnupg
+│       ├── gvfsd
+│       ├── keyring
+│       ├── pulse
+│       ├── snap.snapd-desktop-integration
+│       │   └── dconf
+│       └── systemd
+│           ├── generator.late
+│           │   └── xdg-desktop-autostart.target.wants
+│           ├── inaccessible
+│           │   └── dir
+│           ├── transient
+│           └── units
+└── uuidd
+
+171 directories

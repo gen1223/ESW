@@ -1,0 +1,27 @@
+/home
+└── cbchoi
+    ├── Desktop
+    ├── Documents
+    ├── Downloads
+    ├── esw
+    │   ├── dir.home
+    │   ├── dir.run
+    │   ├── sample2.txt
+    │   ├── sample3.txt
+    │   ├── sampletext.txt
+    │   ├── test.txt
+    │   └── txtlist
+    ├── Music
+    ├── Pictures
+    ├── Public
+    ├── snap
+    │   └── snapd-desktop-integration
+    │       ├── 10
+    │       ├── 14
+    │       ├── common
+    │       └── current -> 14
+    ├── Templates
+    ├── Videos
+    └── xrandr.sh
+
+16 directories, 8 files
