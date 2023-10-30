@@ -1,4 +1,4 @@
-# Repository for 2022 ESW - RPi
+# Repository for ESW - RPi
 
 ## setup RPi SPI Enable
 In RPi Terminal
