@@ -2,9 +2,17 @@
  Cannon Game
 '''
 
+# for LCD View on PC
+from tkinter import *
+from PIL import Image, ImageDraw, ImageFont, ImageTk
+win = Tk()
+win.title("LCD View")
+can = Canvas(win, width=240, height=240)
+can.pack()
+
 import random
 import math
-from PIL import Image, ImageDraw, ImageFont
+# from PIL import Image, ImageDraw, ImageFont
 from Enemy import Enemy
 from Bullet import Bullet
 from Cannon import Cannon
@@ -72,6 +80,11 @@ def main():
 
         #좌표는 동그라미의 왼쪽 위, 오른쪽 아래 점 (x1, y1, x2, y2)
         joystick.disp.image(my_image)
+        # for LCD View on PC choi++231110
+        tk_img = ImageTk.PhotoImage(my_image, master=win)
+        can.create_image(0,0, anchor='nw', image=tk_img)
+        win.update()
 
 if __name__ == '__main__':
     main()
+    win.mainloop()
